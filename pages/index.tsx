@@ -12,6 +12,10 @@ const Index: NextPage = () => {
                 <meta name="author" content="whoyoux" />
                 <link rel="icon" href="/favicon.ico" />
                 <body className="bg-gray-100 dark:bg-gray-900" />
+                <meta
+                    name="google-site-verification"
+                    content="qc83TqR9I3z1t4ZAnDizLbzBy8QLOO70BHKRy4aM5es"
+                />
             </Head>
 
             <main className="flex flex-col xl:flex-row items-center max-w-screen-lg mx-auto mt-5 sm:mt-0">
