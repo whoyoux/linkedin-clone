@@ -1,4 +1,5 @@
 import { getToken } from 'next-auth/jwt';
+import { NextResponse } from 'next/server';
 
 export async function middleware(req: any) {
     if (req.nextUrl.pathname === '/') {
@@ -8,6 +9,6 @@ export async function middleware(req: any) {
             secureCookie: process.env.NODE_ENV === 'production'
         });
 
-        if (!session) return Response.redirect('/signin');
+        if (!session) return NextResponse.redirect('/signin');
     }
 }
